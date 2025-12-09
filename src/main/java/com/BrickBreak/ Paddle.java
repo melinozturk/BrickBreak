@@ -1,3 +1,7 @@
+//Melin Ozturk
+//12//9/2025
+//This is the Paddle class for the BrickBreak game. 
+
 package com.BrickBreak;
 
 import java.awt.Graphics;
