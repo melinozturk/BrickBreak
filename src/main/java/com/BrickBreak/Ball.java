@@ -47,6 +47,8 @@ public class Ball {
 //postcondition: 
 	public void setXpos(){
 
+		
+
 	}
 //precondition: 
 //postcondition: 
