@@ -40,44 +40,50 @@ public class Ball {
 //postcondition: moves the ball by changeX and changeY
 
     public void move() {
-    x+= changeX;
-    y+= changeY;
+    x+= xVelocity;
+    y+= yVelocity;
 	}
 //precondition: 
 //postcondition: 
 	public void setXpos(){
 
-		
+		this.x=x;
 
 	}
 //precondition: 
 //postcondition: 
 	public void getXpos(){
+		return x;
 
 	}
 //precondition: 
 //postcondition: 
 	public void setYPos(){
+		this.y=y;
 
 	}
 //precondition: 
 //postcondition: 
 	public void getYpos(){
+		return y;
 
 	}
 //precondition: 
 //postcondition: 
 	public void reverseX(){
+		this.xVelocity = -this.xVelocity;
 
 	}
 //precondition: 
 //postcondition: 
 	public void reverseY(){
+		this.yVelocity = -this.yVelocity;
 
 	}
 //precondition: 
 //postcondition: 
 	public void setXvelocity(){
+
 
 	}
 //precondition: 
