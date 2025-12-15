@@ -15,6 +15,9 @@ public class Paddle {
 	private int y; 
 	private int width;
 	private int height;
+	private int speed;
+	private int location;
+
 
 	//constructor(s):
 	public Paddle(int x, int y, int width, int height) {
@@ -22,6 +25,8 @@ public class Paddle {
 		this.y = y;
 		this.width = width;
 		this.height = height;
+		this.speed = 5; 
+		this.location = x + width /2;
 	}
 
 	
@@ -37,31 +42,45 @@ public class Paddle {
 	//precondition:
 	//postcondition: 
 	public void move() {
+		int centerX = x + height / 2;		
+	 
+	 if (centerX<location) {
+		if ((centerX+speed)>location) {
+			y+= Math.abs(location-(centerX+speed));
+		}
+		else y+=speed;
+	 }
 		
 	}
 	//precondition:
 	//postcondition: 
-	public void getX(){
+	public int getX(){
+
+	return x; 
 
 	}
 	//precondition:
 	//postcondition: 
-	public void getY(){
+	public int getY(){
+		return y;
 
 	}
 	//precondition:
 	//postcondition: 
-	public void getHeight(){
+	public int getHeight(){
+		return height; 
 
 	}
 	//precondition:
 	//postcondition: 
-	public void getWidth(){
+	public int getWidth(){
+		return width; 
 
 	}
 	//precondition:
 	//postcondition: 
-	public void getVelocity(){
+	public int getVelocity(){
+		return speed; 
 
 	}
 	
