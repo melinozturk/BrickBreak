@@ -45,26 +45,25 @@ public class Ball {
 	}
 //precondition: 
 //postcondition: 
-	public void setXpos(){
-
+	public void setXpos(int x){
 		this.x=x;
 
 	}
 //precondition: 
 //postcondition: 
-	public void getXpos(){
+	public int getXpos(){
 		return x;
 
 	}
 //precondition: 
 //postcondition: 
-	public void setYPos(){
+	public void setYPos(int y){
 		this.y=y;
 
 	}
 //precondition: 
 //postcondition: 
-	public void getYpos(){
+	public int getYpos(){
 		return y;
 
 	}
@@ -82,33 +81,40 @@ public class Ball {
 	}
 //precondition: 
 //postcondition: 
-	public void setXvelocity(){
+	public void setXvelocity(int xVelocity){
+	this.xVelocity= xVelocity;
 
 
 	}
 //precondition: 
 //postcondition: 
-	public void getXvelocity(){
+	public int getXvelocity(){
+	return xVelocity; 
 
 	}
 //precondition: 
 //postcondition: 
-	public void setYvelocity(){
+	public void setYvelocity(int yVelocity){
+	this.yVelocity= yVelocity;
+
 
 	}
 //precondition: 
 //postcondition: 
-	public void getYvelocity(){
+	public int getYvelocity(){
+	return xVelocity; 
 
 	}
 //precondition: 
 //postcondition: 
-	public void setSize(){
+	public void setSize(int radius){
+		this.radius= radius;
 		
 	}
 //precondition: 
 //postcondition: 
-	public void getSize(){
+	public int getSize(){
+		return radius;
 
 	}
 	
