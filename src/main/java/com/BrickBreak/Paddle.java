@@ -53,11 +53,49 @@ public class Paddle {
 		
 	}
 	//precondition:
+	//postcondition:
+	public void setLocation(int loc){
+		this.location=loc;
+
+	}
+	//precondition:
+	//postcondition:
+	public int getLocation(){
+		return location;
+
+	}
+	//precondition:
+	//postcondition:
+	public int getVelocity(){
+		return speed;
+	}
+	//precondition:
+	//postcondition:
+	public void addVelocity(int input){
+		this.speed+=input;
+		
+	}
+	//precondition:
+	//postcondition:
+	public int setVelocity(int speed){
+		return this.speed=speed;
+	}
+	//precondition:
+	//postcondition:
+	public void setX(int x){
+		this.x=x;
+	}
+	//precondition:
 	//postcondition: 
 	public int getX(){
 
 	return x; 
 
+	}
+	//precondition:
+	//postcondition:
+	public void setY(int y){
+		this.y=y;
 	}
 	//precondition:
 	//postcondition: 
@@ -79,7 +117,7 @@ public class Paddle {
 	}
 	//precondition:
 	//postcondition: 
-	public int getVelocity(){
+	public int addVelocity(){
 		return speed; 
 
 	}

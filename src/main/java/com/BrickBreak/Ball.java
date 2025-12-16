@@ -2,6 +2,7 @@
 //12//9/2025
 //This is the Ball class for the BrickBreak game. 
 
+//anything that is not get or set need post pre 
 package com.BrickBreak;
 import java.awt.*;
 
@@ -43,27 +44,28 @@ public class Ball {
     x+= xVelocity;
     y+= yVelocity;
 	}
+	
 //precondition: 
 //postcondition: 
-	public void setXpos(int x){
+	public void setX(int x){
 		this.x=x;
 
 	}
 //precondition: 
 //postcondition: 
-	public int getXpos(){
+	public int getX(){
 		return x;
 
 	}
 //precondition: 
 //postcondition: 
-	public void setYPos(int y){
+	public void setY(int y){
 		this.y=y;
 
 	}
 //precondition: 
 //postcondition: 
-	public int getYpos(){
+	public int getY(){
 		return y;
 
 	}
@@ -75,17 +77,38 @@ public class Ball {
 	}
 //precondition: 
 //postcondition: 
+public int getXpos(){
+	return x;
+
+}
+//precondition: 
+//postcondition: 
+public int getYpos(){
+	return y; 
+}
+//precondition: 
+//postcondition: 
 	public void reverseY(){
 		this.yVelocity = -this.yVelocity;
 
 	}
+	//precondition: 
+//postcondition: 
+	public void setXVelocity(int xVelocity){
+		this.xVelocity= xVelocity;
+	}
+	//precondition: 
+//postcondition: 
+	public void setYVelocity(int yVelocity){
+		this.yVelocity= yVelocity;
+	}
 //precondition: 
 //postcondition: 
-	public void setXvelocity(int xVelocity){
-	this.xVelocity= xVelocity;
+	//public void setXvelocity(int xVelocity){
+	//this.xVelocity= xVelocity;
 
 
-	}
+	
 //precondition: 
 //postcondition: 
 	public int getXvelocity(){
