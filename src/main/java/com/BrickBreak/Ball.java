@@ -1,5 +1,5 @@
 //Melin Ozturk
-//12//9/2025
+//12/9/2025
 //This is the Ball class for the BrickBreak game. 
 
 //anything that is not get or set need post pre 
@@ -28,8 +28,8 @@ public class Ball {
 	
 	//methods:
 
-//precondition: 
-//postcondition: 
+//precondition: g is a non-null value
+//postcondition: draw the ball on the screen 
 
 	public void draw(Graphics g) {
       g.setColor(Color.PINK);
@@ -45,26 +45,22 @@ public class Ball {
     y+= yVelocity;
 	}
 	
-//precondition: 
-//postcondition: 
+
 	public void setX(int x){
 		this.x=x;
 
 	}
-//precondition: 
-//postcondition: 
+
 	public int getX(){
 		return x;
 
 	}
-//precondition: 
-//postcondition: 
+ 
 	public void setY(int y){
 		this.y=y;
 
 	}
-//precondition: 
-//postcondition: 
+
 	public int getY(){
 		return y;
 
@@ -75,14 +71,12 @@ public class Ball {
 		this.xVelocity = -this.xVelocity;
 
 	}
-//precondition: 
-//postcondition: 
+
 public int getXpos(){
 	return x;
 
 }
-//precondition: 
-//postcondition: 
+
 public int getYpos(){
 	return y; 
 }
@@ -92,50 +86,36 @@ public int getYpos(){
 		this.yVelocity = -this.yVelocity;
 
 	}
-	//precondition: 
-//postcondition: 
+
 	public void setXVelocity(int xVelocity){
 		this.xVelocity= xVelocity;
 	}
-	//precondition: 
-//postcondition: 
+
 	public void setYVelocity(int yVelocity){
 		this.yVelocity= yVelocity;
 	}
-//precondition: 
-//postcondition: 
-	//public void setXvelocity(int xVelocity){
-	//this.xVelocity= xVelocity;
 
-
-	
-//precondition: 
-//postcondition: 
 	public int getXvelocity(){
 	return xVelocity; 
 
 	}
-//precondition: 
-//postcondition: 
+
 	public void setYvelocity(int yVelocity){
 	this.yVelocity= yVelocity;
 
 
 	}
-//precondition: 
-//postcondition: 
+
 	public int getYvelocity(){
 	return xVelocity; 
 
 	}
-//precondition: 
-//postcondition: 
+ 
 	public void setSize(int radius){
 		this.radius= radius;
 		
 	}
-//precondition: 
-//postcondition: 
+
 	public int getSize(){
 		return radius;
 

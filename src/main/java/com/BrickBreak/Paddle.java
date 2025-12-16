@@ -4,7 +4,6 @@
 
 package com.BrickBreak;
 
-import java.awt.Graphics;
 import java.awt.*;
 
 public class Paddle {
@@ -25,7 +24,7 @@ public class Paddle {
 		this.y = y;
 		this.width = width;
 		this.height = height;
-		this.speed = 5; 
+		this.speed = 1 ; 
 		this.location = x + width /2;
 	}
 
@@ -39,33 +38,46 @@ public class Paddle {
 
 	  g.fillRect(x, y, width, height);
 	}
-	//precondition:
-	//postcondition: 
+	//precondition: none
+	//postcondition: moves the paddle toward the location variable by speed amount 
 	public void move() {
-		int centerX = x + height / 2;		
-	 
-	 if (centerX<location) {
-		if ((centerX+speed)>location) {
-			y+= Math.abs(location-(centerX+speed));
+
+		x+=speed;
+		if (x<0){
+			x=0;
 		}
-		else y+=speed;
+		if (x> 0){
+			x=0;
+		}
+		}
+
+		 //if (x > getWidth() - width || x < 0) {
+     
+		 } 
+		
+
+
+		//int centerX = x + height / 2;		
+	 
+	 //if (centerX<location) {
+		//if ((centerX+speed)>location) {
+			//x+= Math.abs(location-(centerX+speed));
+	// 	}
+		//else x+=speed;
 	 }
 		
-	}
-	//precondition:
-	//postcondition:
+	
+	
 	public void setLocation(int loc){
 		this.location=loc;
 
 	}
-	//precondition:
-	//postcondition:
+	
 	public int getLocation(){
 		return location;
 
 	}
-	//precondition:
-	//postcondition:
+	
 	public int getVelocity(){
 		return speed;
 	}
@@ -75,48 +87,41 @@ public class Paddle {
 		this.speed+=input;
 		
 	}
-	//precondition:
-	//postcondition:
+
 	public int setVelocity(int speed){
 		return this.speed=speed;
 	}
-	//precondition:
-	//postcondition:
+	
 	public void setX(int x){
 		this.x=x;
 	}
-	//precondition:
-	//postcondition: 
+
 	public int getX(){
 
 	return x; 
 
 	}
-	//precondition:
-	//postcondition:
+
 	public void setY(int y){
 		this.y=y;
 	}
-	//precondition:
-	//postcondition: 
+	
 	public int getY(){
 		return y;
 
 	}
-	//precondition:
-	//postcondition: 
+	 
 	public int getHeight(){
 		return height; 
 
 	}
-	//precondition:
-	//postcondition: 
+
 	public int getWidth(){
 		return width; 
 
 	}
-	//precondition:
-	//postcondition: 
+	//precondition: 
+	//postcondition: returns speed of paddle
 	public int addVelocity(){
 		return speed; 
 
