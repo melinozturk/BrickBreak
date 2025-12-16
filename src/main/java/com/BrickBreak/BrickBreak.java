@@ -229,6 +229,7 @@ public class BrickBreak extends JPanel implements KeyListener, ActionListener {
 			ball.setYVelocity(-2);
 			player.setX(310);
 			player.setVelocity(0);
+			
 			score = 0;
 			totalBricks = 21;
 			for (int i = 0; i < mapHeight; i++) {

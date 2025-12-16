@@ -41,19 +41,28 @@ public class Paddle {
 	//precondition: none
 	//postcondition: moves the paddle toward the location variable by speed amount 
 	public void move() {
+	//	System.out.println("attempted move");
+		
+		x += speed;
 
-		x+=speed;
-		if (x<0){
-			x=0;
+		//System.out.println(x);
+
+		if (x < 0 || x > 700 - width) {
+			System.out.println("hit left wall");
+			speed = -speed;
 		}
-		if (x> 0){
-			x=0;
-		}
-		}
+		
+		// if (x < 0){
+		// 	x=0;
+		// }
+		// if (x > 0){
+		// 	x=0;
+		// }
+		// }
 
 		 //if (x > getWidth() - width || x < 0) {
      
-		 } 
+		 //} 
 		
 
 
@@ -64,7 +73,8 @@ public class Paddle {
 			//x+= Math.abs(location-(centerX+speed));
 	// 	}
 		//else x+=speed;
-	 }
+	// }
+	}
 		
 	
 	
