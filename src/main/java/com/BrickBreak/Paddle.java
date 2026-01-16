@@ -45,39 +45,12 @@ public class Paddle {
 		
 		x += speed;
 
-		//System.out.println(x);
 
 		if (x < 0 || x > 700 - width) {
 			System.out.println("hit left wall");
 			speed = -speed;
 		}
 		
-		// if (x < 0){
-		// 	x=0;
-		// }
-		// if (x > 0){
-		// 	x=0;
-		// }
-		// }
-
-		 //if (x > getWidth() - width || x < 0) {
-     
-		 //} 
-		
-
-
-		//int centerX = x + height / 2;		
-	 
-	 //if (centerX<location) {
-		//if ((centerX+speed)>location) {
-			//x+= Math.abs(location-(centerX+speed));
-	// 	}
-		//else x+=speed;
-	// }
-	}
-		
-	
-	
 	public void setLocation(int loc){
 		this.location=loc;
 
@@ -91,8 +64,8 @@ public class Paddle {
 	public int getVelocity(){
 		return speed;
 	}
-	//precondition:
-	//postcondition:
+	//precondition: input is a numeric value
+	//postcondition: adds input to speed of paddle
 	public void addVelocity(int input){
 		this.speed+=input;
 		
@@ -130,7 +103,7 @@ public class Paddle {
 		return width; 
 
 	}
-	//precondition: 
+	//precondition: input is a numeric value
 	//postcondition: returns speed of paddle
 	public int addVelocity(){
 		return speed; 

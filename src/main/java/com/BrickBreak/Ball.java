@@ -65,8 +65,8 @@ public class Ball {
 		return y;
 
 	}
-//precondition: 
-//postcondition: 
+//precondition: X is a numeric value
+//postcondition: reverses the x velocity of the ball
 	public void reverseX(){
 		this.xVelocity = -this.xVelocity;
 
@@ -80,8 +80,8 @@ public int getXpos(){
 public int getYpos(){
 	return y; 
 }
-//precondition: 
-//postcondition: 
+//precondition: Y is a numeric value
+//postcondition: reverses the y velocity of the ball
 	public void reverseY(){
 		this.yVelocity = -this.yVelocity;
 
