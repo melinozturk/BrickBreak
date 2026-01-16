@@ -50,6 +50,7 @@ public class Paddle {
 			System.out.println("hit left wall");
 			speed = -speed;
 		}
+	}
 		
 	public void setLocation(int loc){
 		this.location=loc;
@@ -108,6 +109,7 @@ public class Paddle {
 	public int addVelocity(){
 		return speed; 
 
-	}
 	
+	
+}
 }
